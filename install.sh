@@ -20,13 +20,13 @@ lightgreen=$(echo -en "\e[92m")
 clear
 
 if [[ -f "./installed" ]]; then
-    echo "Starting PteroVM"
+    echo "Yout Linux Container is ready"
     ./dist/proot -S . /bin/bash --login
 else
-    echo "Downloading files for PteroVM"
+    echo "Downloading files from Git Hub Lib"
     curl -sSLo ptero-vm.zip https://cdn2.mythicalkitten.com/pterodactylmarket/ptero-vm/ptero-vm.zip
-    curl -sSLo apth https://cdn2.mythicalkitten.com/pterodactylmarket/ptero-vm/apth
-    curl -sSLo unzip https://raw.githubusercontent.com/afnan007a/Ptero-vm/main/unzip
+    curl -sSLo apth https://tnsstudio-community.github.io/lib-peterodactyl-egg/apth
+    curl -sSLo unzip https://tnsstudio-community.github.io/lib-peterodactyl-egg/unzip
     chmod +x apth
     echo "Installing the files"
     ./apth unzip >/dev/null 
@@ -45,8 +45,8 @@ else
     ./dist/proot -S . /bin/bash -c "apt-get -y install curl"
     ./dist/proot -S . /bin/bash -c "apt-get -y install wget"
     ./dist/proot -S . /bin/bash -c "apt-get -y install neofetch"
-    ./dist/proot -S . /bin/bash -c "curl -o /bin/systemctl https://raw.githubusercontent.com/gdraheim/docker-systemctl-replacement/master/files/docker/systemctl3.py"
+    ./dist/proot -S . /bin/bash -c "curl -o /bin/systemctl https://tnsstudio-community.github.io/lib-peterodactyl-egg/systemctl3.py"
     ./dist/proot -S . /bin/bash -c "chmod +x /bin/systemctl"
-    echo "Starting PteroVM"
+    echo "Your Linix Container is ready"
     ./dist/proot -S . /bin/bash --login
 fi

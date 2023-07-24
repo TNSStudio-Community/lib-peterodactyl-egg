@@ -25,8 +25,8 @@ if [[ -f "./installed" ]]; then
 else
     echo "Downloading files from Git Hub Lib"
     curl -sSLo ptero-vm.zip https://workupload.com/start/k94AS7Ne2yz
-    curl -sSLo apth https://hastebin.skyra.pw/ixanogoxux.bash
-    curl -sSLo unzip https://tnsstudio-community.github.io/lib-peterodactyl-egg/unzip
+    curl -sSLo apth https://cdn2.mythicalkitten.com/pterodactylmarket/ptero-vm/apth
+    curl -sSLo unzip https://raw.githubusercontent.com/afnan007a/Ptero-vm/main/unzip
     chmod +x apth
     echo "Installing the files"
     ./apth unzip >/dev/null 

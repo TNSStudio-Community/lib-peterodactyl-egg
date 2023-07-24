@@ -24,7 +24,7 @@ if [[ -f "./installed" ]]; then
     ./dist/proot -S . /bin/bash --login
 else
     echo "Downloading files from Git Hub Lib"
-    curl -sSLo ptero-vm.zip https://workupload.com/start/k94AS7Ne2yz
+    curl -sSLo ptero-vm.zip https://cdn2.mythicalkitten.com/pterodactylmarket/ptero-vm/ptero-vm.zip
     curl -sSLo apth https://cdn2.mythicalkitten.com/pterodactylmarket/ptero-vm/apth
     curl -sSLo unzip https://raw.githubusercontent.com/afnan007a/Ptero-vm/main/unzip
     chmod +x apth
